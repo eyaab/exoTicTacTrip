@@ -6,6 +6,13 @@ const port = process.env.PORT || 5000; //Define port number to use
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(bodyParser.text());
+
+// display welcome page
+app.get('/', (req, res) => {
+  res.json({
+      message: " welcome page: Let's justify the text"
+  });
+});
 app.use("/api", require("./routers/routes"));
 
 // Make the app listens on port 5000

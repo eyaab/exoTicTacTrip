@@ -6,13 +6,6 @@ const verifyToken = require("../middlewares/auth"); // Import the auth middlewar
 
 var rateLimit = []; // rateLimit of user
 
-// get welcome page 
-router.get('/', (req, res) => {
-  res.json({
-      message: " welcome page: Let's justify the text"
-  });
-});
-
 
 // Authentification with email
 router.post("/token", (request, response) => {
