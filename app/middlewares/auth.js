@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 
 const verifyToken = (req, res, next) => {
   if (!req.headers.authorization) {
-    return res.status(403).send("A token is required for authenticationdfdf");
+    return res.status(403).send("A token is required for authenticationd");
   }
   const token = req.headers.authorization.split(" ")[0];
 

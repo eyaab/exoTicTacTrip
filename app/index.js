@@ -6,7 +6,7 @@ const port = process.env.PORT || 5000; //Define port number to use
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(bodyParser.text());
-app.use("/api", require("./routers/justify"));
+app.use("/api", require("./routers/routes"));
 
 // Make the app listens on port 5000
 app.listen(port, () => {
