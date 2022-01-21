@@ -7,7 +7,7 @@ const verifyToken = require("../middlewares/auth"); // Import the auth middlewar
 var rateLimit = []; // rateLimit of user
 
 // get welcome page 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
   res.json({
       message: " welcome page: Let's justify the text"
   });
